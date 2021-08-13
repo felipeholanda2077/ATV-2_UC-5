@@ -9,7 +9,7 @@ namespace Atividade2.Models
 
         public double ValorTotal = 0;
         public int QtdItens = 0;
-        public int nPedido;//Número do Pedido-pai do Item
+        public int nPedido;
 
         public void AdicionarItem(Item i)
         {

@@ -18,15 +18,14 @@ namespace Atividade2.Controllers
             _logger = logger;
         }
 
-        //Exibe a lista de itens
+        
         public IActionResult Index()
         {
             List<Pedido> pedidos = ListaPedidos.ListarPedidos();
             return View(pedidos);
         }
 
-        //Cria um pedido em branco, usa pedidos.Count() para salvar o número do pedido e então inclui o
-        //pedido na Lista de Pedidos
+        
         public IActionResult CriarPedido()
         {
             List<Pedido> pedidos = ListaPedidos.ListarPedidos();
@@ -40,9 +39,6 @@ namespace Atividade2.Controllers
         }
 
         
-        //Recebe como parâmetro o número do pedido selecionado na Lista exibida
-        //e então o remove da Lista de Pedidos. Depois é feita uma atualização
-        //dos números de cada pedido
         public IActionResult DeletarPedido(int i)
         {
             List<Pedido> pedidos = ListaPedidos.ListarPedidos();
