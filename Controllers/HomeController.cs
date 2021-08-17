@@ -18,14 +18,13 @@ namespace Atividade2.Controllers
             _logger = logger;
         }
 
-        
         public IActionResult Index()
         {
             List<Pedido> pedidos = ListaPedidos.ListarPedidos();
             return View(pedidos);
         }
 
-        
+
         public IActionResult CriarPedido()
         {
             List<Pedido> pedidos = ListaPedidos.ListarPedidos();
